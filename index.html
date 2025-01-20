@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <p id="myp">lets change this</p>
+    <script src="/script.js"></script>
+    <button onclick="changeP()" class="new"  >change content</button>
+
+
+    <ul id="myul">
+        <li>first</li>
+        <button onclick="addLi()" class="new">add li</button>
+        </ul>
+
+
+        <button id="mybtn" onclick="changebtn()" class="new">click to change</button>
+        <form id="myForm" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="errorMessage">This field is required.</span>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+
+          <div>
+            <div id="mydiv">
+                <h1>content here</h1>
+                <p>press the button to hide</p>
+              </div>
+              <button id="secondBtn" onclick="hideDiv()">click to hide</button>
+          </div>
+
+          <h1>Current Date and Time: <span id="dateTime"></span></h1>
+
+
+          <p id="removeMe">remove this paragraph</p>
+          <button id="removeBtn">remove</button>
+
+          
+
+        
+        <script src="/script.js"></script>
+</body>
+
+</html>

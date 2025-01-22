@@ -110,3 +110,36 @@ function counter(){
 }
 
 //11
+const myp=document.getElementById('mypr');
+myp.addEventListener('mouseenter',()=>{
+    myp.classList.add('hovered');
+});
+myp.addEventListener('mouseleave',()=>{
+    myp.classList.remove('hovered');
+});
+
+
+
+
+//12
+const stuff=["car", "bike", "rollers", "hoverboard"];
+
+const myselect=document.getElementById('myselect');
+
+stuff.forEach(mystuff =>{
+    const integrate= document.createElement("option");
+    integrate.textContent=mystuff;
+    myselect.appendChild(integrate);
+});
+
+
+//13
+
+function myfun(){
+  document.querySelectorAll('table tr').forEach(row => {
+      row.addEventListener('click', () => {
+        document.querySelectorAll('table tr').forEach(r => r.classList.remove('highlight'));
+        row.classList.add('highlight');
+      });
+    });
+}
